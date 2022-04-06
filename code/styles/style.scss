@@ -1,0 +1,115 @@
+// importing fonts
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Dark-Blue);
+  flex-direction: column;
+}
+
+// CUSTOM STYLES
+:root {
+  --Light-Cyan: #cfe3e8;
+  --Neon-Green: #52ffa8;
+  --Grayish-Blue: #4e5d73;
+  --Dark-Grayish-Blue: #323a49;
+  --Dark-Blue: #1f2632;
+  --main-font: "Manrope", sans-serif;
+  --advice-font-size: 28px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 45%;
+  background: var(--Dark-Grayish-Blue);
+  border-radius: 20px;
+  padding: 2rem 4rem;
+  h3 {
+    font-weight: 600;
+    color: var(--Neon-Green);
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .advice {
+    p {
+      color: var(--Light-Cyan);
+      font-weight: 800;
+      text-align: center;
+      font-size: 28px;
+      margin: 1rem 0 1.5rem 0;
+    }
+  }
+}
+
+#divider {
+  position: relative;
+  top: -95px;
+  padding: 1rem 0;
+}
+.btn {
+  position: relative;
+  top: -25px;
+  button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: var(--Neon-Green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all 0.3s ease-in;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 25px var(--Neon-Green);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 320px;
+    height: auto;
+    p {
+      font-size: 20px;
+    }
+  }
+  .btn {
+    position: relative;
+    top: -30px;
+  }
+  #divider {
+    padding-top: 4rem;
+  }
+}
+// @media screen and (min-width: 768px), (max-width: 1440px) {
+//   .container {
+//     width: 650px;
+//     height: auto;
+//     p {
+//       font-size: 20px;
+//     }
+//   }
+//   .btn {
+//     position: relative;
+//     top: -30px;
+//   }
+// }
